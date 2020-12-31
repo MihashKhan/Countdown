@@ -49,7 +49,7 @@ class App extends Component {
         this.setState({ countdownText: months + days + hours + mins + secs })
       }, interval)
     } else {
-      this.setState({ countdownText: 'Happy New Year!' })
+      this.setState({ countdownText: 'Happy New Year Simi & Arsath ' })
     }
   }
 
@@ -59,10 +59,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1>New Year Countdown to {newYear}</h1>
+
         <Countdown text={countdownText} />
-        <a href="https://github.com/Gurenax/react-new-year-countdown">
-          Fork me on Github
-        </a>
+
       </div>
     )
   }
