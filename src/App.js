@@ -60,7 +60,8 @@ class App extends Component {
       <div className="App">
         <h1>New Year Countdown to {newYear}</h1>
 
-        <Countdown text={countdownText} />
+        <Countdown  text={countdownText} />
+        
 
       </div>
     )
