@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: orangered;
 }
 
 h2 {
@@ -41,3 +42,4 @@ a:hover{
 img {
   border-radius: 50%;
 }
+
