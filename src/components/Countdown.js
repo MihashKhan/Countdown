@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Countdown = ({ text }) => <h2 style={{color: "red" ,backgroundImage: `url("https://via.placeholder.com/500")` }}>{text}</h2>
+const Countdown = () => <h2 style={{color: "white" ,backgroundImage: `url("https://picsum.photos/id/23/90/100")` }}>.</h2>
 
 export default Countdown

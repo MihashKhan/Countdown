@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import Countdown from './components/Countdown'
+import Countdown1 from './components/Countdown1'
 import Header from './components/Header'
 import './App.css'
+import logo from './simi.jpg'; // Tell webpack this JS file uses this image
+import logo2 from './arsath.jpg'; 
+import logo3 from './shifa2.jpg'; 
 
 
 import moment from 'moment'
@@ -83,15 +87,22 @@ console.log(this.state.pos);
     return (
 
       <div  className="App">
-        <Header/>
+       
         
       
       
-        <Countdown  text={countdownText} />
-                <Countdown  text={renderName} 
-        onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}
+        <Countdown   />
+        <img src={logo} alt="Logo" width="300" height="300"   />
+        <Countdown1  text={countdownText} />
+                <Countdown  
+        
           />
-        <Countdown text={this.state.time} className="App-clock" />
+          <img src={logo2} alt="Logo2" width="300" height="300"   /> 
+          <Countdown1   text={renderName} />
+        <Countdown />
+
+        <img src={logo3} alt="Logo2" width="300" height="300"   />
+        <Countdown1  text={this.state.time} className="App-clock"  />
             
          
 
