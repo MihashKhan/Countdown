@@ -76,7 +76,7 @@ class App extends Component {
     const { newYear, countdownText } = this.state
 
     return (
-      <div className="App">
+      <div  className="App">
         <h1>New Year Countdown to {newYear}</h1>
 
         <Countdown  text={countdownText} 
