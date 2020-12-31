@@ -38,3 +38,6 @@ a:hover{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 } */
+img {
+  border-radius: 50%;
+}

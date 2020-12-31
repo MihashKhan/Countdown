@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Countdown from './components/Countdown'
+import Header from './components/Header'
 import './App.css'
+import logo from './unsplash.jpg';
 
 import moment from 'moment'
 
@@ -22,7 +24,9 @@ class App extends Component {
     this.state = {
       newYear: '2021',
       countdownText: '',
-      time: new Date().toLocaleString()
+      time: new Date().toLocaleString(),
+      name:['SIMI','ARSATH','SHIFA'],
+      pos:0
     }
   
     // This binding is necessary to make `this` work in the callback
@@ -68,23 +72,28 @@ class App extends Component {
         this.setState({ countdownText: months + days + hours + mins + secs })
       }, interval)
     } else {
-      this.setState({ countdownText: 'Happy New Year Simi & Arsath ' })
+      this.setState({ countdownText: 'Happy New Year  ' })
     }
   }
 
   render() {
     const { newYear, countdownText } = this.state
-
+    const renderName=this.state.name[this.state.pos]
+console.log(this.state.pos);
     return (
-      <div  className="App">
-        <h1>New Year Countdown to {newYear}</h1>
 
-        <Countdown  text={countdownText} 
+      <div  className="App">
+        <Header/>
+        
+      
+      
+        <Countdown  text={countdownText} />
+                <Countdown  text={renderName} 
         onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}
           />
-        <h2 className="App-clock">
-            {this.state.time}.
-          </h2>
+        <Countdown text={this.state.time} className="App-clock"/>
+            
+         
 
       </div>
     )
@@ -108,7 +117,8 @@ class App extends Component {
   }
   tick() {
     this.setState({
-      time: new Date().toLocaleString()
+      time: new Date().toLocaleString(),
+      pos: (this.state.pos+1)%3
     });
   }
 }
