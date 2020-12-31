@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Countdown from './components/Countdown'
 import Header from './components/Header'
 import './App.css'
-import logo from './unsplash.jpg';
+
 
 import moment from 'moment'
 
@@ -91,7 +91,7 @@ console.log(this.state.pos);
                 <Countdown  text={renderName} 
         onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}
           />
-        <Countdown text={this.state.time} className="App-clock"/>
+        <Countdown text={this.state.time} className="App-clock" />
             
          
 
