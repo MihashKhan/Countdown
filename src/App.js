@@ -17,11 +17,30 @@ const formatCountdownTextLabel = (digit, label, strict) => {
 }
 
 class App extends Component {
-  state = {
-    newYear: '2021',
-    countdownText: ''
+  constructor(props) {
+    super(props);
+    this.state = {
+      newYear: '2021',
+      countdownText: '',
+      time: new Date().toLocaleString()
+    }
+  
+    // This binding is necessary to make `this` work in the callback
+   // this.handleClick = this.handleClick.bind(this);
   }
 
+
+  handleClick=() =>{
+    this.setState({
+      countdownText: "Hi simi and arsath!! Wish You Happy new year"
+    });
+  }
+
+  toggleHover=()=> {
+    this.setState({countdownText: "Hi simi and arsath!! Wish You Happy new year"});
+    console.log("js");
+  }
+  
   timer = newYear => {
     const eventTime = moment(
       `01-01-${newYear} 00:00:00`,
@@ -60,8 +79,12 @@ class App extends Component {
       <div className="App">
         <h1>New Year Countdown to {newYear}</h1>
 
-        <Countdown  text={countdownText} />
-        
+        <Countdown  text={countdownText} 
+        onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}
+          />
+        <h2 className="App-clock">
+            {this.state.time}.
+          </h2>
 
       </div>
     )
@@ -72,6 +95,21 @@ class App extends Component {
     const { newYear } = this.state
     // Call the timer function
     this.timer(newYear)
+
+
+    this.intervalID = setInterval(
+      () => this.tick(),
+      1000
+    );
+
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
+  }
+  tick() {
+    this.setState({
+      time: new Date().toLocaleString()
+    });
   }
 }
 
