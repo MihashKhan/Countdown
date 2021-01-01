@@ -92,16 +92,16 @@ console.log(this.state.pos);
       
       
         <Countdown   />
-        <img src={logo} alt="Logo" width="300" height="300"   />
+        <img src={logo} alt="Logo" width="300" height="300"   class="rotate"/>
         <Countdown1  text={countdownText} />
                 <Countdown  
         
           />
-          <img src={logo2} alt="Logo2" width="300" height="300"   /> 
+          <img src={logo2} alt="Logo2" width="300" height="300"  class="rotate" /> 
           <Countdown1   text={renderName} />
         <Countdown />
 
-        <img src={logo3} alt="Logo2" width="300" height="300"   />
+        <img src={logo3} alt="Logo2" width="300" height="300"  class="rotate" />
         <Countdown1  text={this.state.time} className="App-clock"  />
             
          
