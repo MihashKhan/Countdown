@@ -4,8 +4,195 @@ html {
 
 .App {
   text-align: center;
-  background-color: orangered;
+
 }
+
+.AliceBlue{
+  background-color: AliceBlue;
+}
+.AntiqueWhite{
+  background-color: AntiqueWhite;
+}
+.Aqua{
+  background-color: Aqua;
+}
+.Aquamarine{
+  background-color: Aquamarine;
+}
+.Azure{
+  background-color: Azure;
+}
+.Beige{
+  background-color: Beige;
+}
+.Bisque{
+  background-color: Bisque;
+}
+.Black{
+  background-color: Black;
+}
+.BlanchedAlmond{
+  background-color: BlanchedAlmond;
+}
+.BlueViolet{
+  background-color: BlueViolet;
+}
+.Brown{
+  background-color: Brown;
+}
+.BurlyWood{
+  background-color: BurlyWood;
+}
+.CadetBlue{
+  background-color: CadetBlue;
+}
+.Chartreuse{
+  background-color: Chartreuse;
+}
+.Chocolate{
+  background-color: Chocolate;
+}
+.Coral{
+  background-color: Coral;
+}
+.CornflowerBlue{
+  background-color: CornflowerBlue;
+}
+.Cornsilk{
+  background-color: Cornsilk;
+}
+.Crimson{
+  background-color: Crimson;
+}
+.Cyan{
+  background-color: Cyan;
+}
+.DarkBlue{
+  background-color: DarkBlue;
+}
+.DarkCyan{
+  background-color: DarkCyan;
+}
+.DarkGoldenRod{
+  background-color: DarkGoldenRod;
+}
+.DarkGray{
+  background-color: DarkGray;
+}
+.DarkGreen{
+  background-color: DarkGreen;
+}
+.DarkKhaki{
+  background-color: DarkKhaki;
+}
+.DarkMagenta{
+  background-color: DarkMagenta;
+}
+.DarkOliveGreen{
+  background-color: DarkOliveGreen;
+}
+.DarkOrange{
+  background-color: DarkOrange;
+}
+.DarkOrchid{
+  background-color: DarkOrchid;
+}
+.DarkRed{
+  background-color: DarkRed;
+}
+.DarkSalmon{
+  background-color: DarkSalmon;
+}
+.DarkSeaGreen{
+  background-color: DarkSeaGreen;
+}
+.DarkSlateBlue{
+  background-color: DarkSlateBlue;
+}
+.DarkSlateGray{
+  background-color: DarkSlateGray;
+}
+.DarkTurquoise{
+  background-color: DarkTurquoise;
+}
+.DarkViolet{
+  background-color: DarkViolet;
+}
+.DeepPink{
+  background-color: DeepPink;
+}
+.DeepSkyBlue{
+  background-color: DeepSkyBlue;
+}
+.DimGray{
+  background-color: DimGray;
+}
+
+.DodgerBlue{
+  background-color: DodgerBlue;
+}
+.FireBrick{
+  background-color: FireBrick;
+}
+.FloralWhite{
+  background-color: FloralWhite;
+}
+.ForestGreen{
+  background-color: ForestGreen;
+}
+.Fuchsia{
+  background-color: Fuchsia;
+}
+.Gainsboro{
+  background-color: Gainsboro;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h2 {
   font-size: 5em;
